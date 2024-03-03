@@ -1,0 +1,6 @@
+
+SELECT Distinct CITY 
+
+FROM STATION 
+
+WHERE lower(substr(CITY, 1, 1)) in ('a', 'e', 'i', 'o', 'u') and lower(substr(CITY, length(CITY), 1)) in ('a', 'e', 'i', 'o', 'u');
